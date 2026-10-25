@@ -129,10 +129,10 @@ Reuse patterns: `free-tool-paths.js`, `server.ts`, Playwright `playwright.free-t
 
 ## 7. Next actions (concrete)
 
-1. Run Phase A catalog script (automate homepage + sitemap tool links).
+1. ~~Phase A catalog~~ — `node ops/scripts/pleper-catalog.mjs` → `ops/pleper-tool-matrix.csv` (20 tools).
 2. Playwright network capture on `cid_converter` + `dupe_search` → save HAR under `ops/pleper-traces/`.
-3. PR branch `seanGPT/fleet-ux-cdd9`: local free tools MVP **2/4 shipped** (review link + CID); next: GBP category helper + local rank teaser.
-4. Align plugin skills: `local-seo` skill mentions new free tools as entry points.
+3. PR branch `seanGPT/fleet-ux-cdd9`: local free tools **2/4**; fleet **Local** row menu on `/overview`; next: GBP category helper + local rank teaser.
+4. ~~Skills~~ — `local-seo` links to openseo.so tools. Execution checklist: `ops/local-competitive-execution-plan.md`.
 
 ---
 
