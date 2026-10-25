@@ -10,7 +10,7 @@ Scope: how to improve OpenSEO vs free SEO utilities (especially PlePer) and adja
 | **PlePer** | Local SEO utility belt (~20 tools) | ~$10–25/mo tools + Scrape API ($0.005/credit) | Chrome ext, scrape API, no agent story |
 | **Ahrefs / Semrush free** | Traffic/keyword/backlink teasers | Upsell to $100+/mo suites | Weak / gated |
 
-OpenSEO marketing free tools today (8): backlink checker, competitor keyword finder, keyword generator, website traffic checker, competitor analysis, spam score checker, domain age checker, SERP simulator (`web/src/lib/free-tools/tool-pages.ts`). Paid calls via DataForSEO with Turnstile + daily budgets (`spend.ts`).
+OpenSEO marketing free tools today (10): the eight national/technical tools above plus **Google review link generator** and **Google CID converter** (local cluster P1, category A — client-side only). Registry: `web/src/lib/free-tools/tool-pages.ts`. Paid DataForSEO tools use Turnstile + daily budgets (`spend.ts`); local utilities have `null` spend.
 
 PlePer tools today (20 `sdo=` routes, from homepage crawl): duplicate GBP finder, local rank tracker, GMB/Apple category lists + helper, CID converter, review/Q&A link generators, reviewer analyze, Knowledge Graph search, Wikipedia nearby, bookmarklets, **GBP scrape suite** (listing, reviews, images, posts, products, Q&A, services, menu).
 
@@ -131,7 +131,7 @@ Reuse patterns: `free-tool-paths.js`, `server.ts`, Playwright `playwright.free-t
 
 1. Run Phase A catalog script (automate homepage + sitemap tool links).
 2. Playwright network capture on `cid_converter` + `dupe_search` → save HAR under `ops/pleper-traces/`.
-3. Open issue/PR: “Local free tools MVP” with 4 tools above.
+3. PR branch `seanGPT/fleet-ux-cdd9`: local free tools MVP **2/4 shipped** (review link + CID); next: GBP category helper + local rank teaser.
 4. Align plugin skills: `local-seo` skill mentions new free tools as entry points.
 
 ---
